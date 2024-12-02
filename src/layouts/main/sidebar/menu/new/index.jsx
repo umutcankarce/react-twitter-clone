@@ -1,6 +1,6 @@
 
 import Button from "~/components/buttons";
-export default function New(){ 
+export default function NewTweet(){ 
     return (
         <div className="py-4 w-[90%]">
         <Button size="large">Gönder</Button>

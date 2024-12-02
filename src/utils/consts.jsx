@@ -1,3 +1,5 @@
+import store from "~/store";
+const states = { }
 export const mainMenu = [
     {
         path:'/',
@@ -127,7 +129,7 @@ export const mainMenu = [
 
     {
 		path: '/verified',
-		title: 'Onaylanmış',
+		title: 'Premium',
 		icon: {
 			active: (
 				<svg viewBox="0 0 24 24" className="h-[1.641rem]">
@@ -149,7 +151,7 @@ export const mainMenu = [
 	},
 
     {
-		path: '/profile',
+		path: `/${store.getState().auth?.currentAccount?.username}`,
 		title: 'Profile',
 		icon: {
 			active: (

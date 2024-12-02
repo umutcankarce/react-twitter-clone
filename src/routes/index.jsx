@@ -39,7 +39,7 @@ const routes = createBrowserRouter([
                 element:<Bookmarks/>
             },
             {
-                path:'profile',
+                path:'/:username',
                 element:<Profile/>
             },
             {

@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import { mainMenu } from "~/utils/consts";
 import More from "~/layouts/main/sidebar/menu/more";
-import New from "~/layouts/main/sidebar/menu/new";
+import NewTweet from "~/layouts/main/sidebar/menu/new";
 export default function Menu() {
   return (
     <nav className="mt-0.5 mb-1">
         {mainMenu.map((menu,index) => (
         
-            <NavLink to={menu.path} className="py-[3px] block group">
+            <NavLink key={index} to={menu.path} className="py-[3px] block group">
                 {({isActive}) => (
                     <div className={classNames("p-3 rounded-full inline-flex transition-colors items-center gap-5 text-xl group-hover:bg-[#eff3f41a]",{
                         "font-bold" : isActive
@@ -27,10 +27,9 @@ export default function Menu() {
 
         ))}
         
-        <More/>
+        <More />
 
-
-       <New/>
+        <NewTweet />
     </nav>
     
   );
