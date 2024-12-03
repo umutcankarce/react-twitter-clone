@@ -4,13 +4,29 @@ const initialState = {
     currentAccount:{
         id:1,
         username:'innovacraft',
-        fullname:'innovacraftcom',
+        fullName:'innovacraftcom',
         email:'test@gmail.com',
         avatar:'https://pbs.twimg.com/profile_images/1625192006040313857/WGoROpHy_400x400.jpg',
     },
-    accounts : [],
+    accounts : [
+        {
+            id:2,
+            username:'github',
+            fullName:'GitHub',
+            email:'github@gmail.com',
+            avatar:'https://pbs.twimg.com/profile_images/1633247750010830848/8zfRrYjA_400x400.png',
+        },
+        {
+            id:3,
+            username:'innovacraft',
+            fullName:'innovacraft',
+            email:'test@gmail.com',
+            avatar:'https://pbs.twimg.com/profile_images/1625192006040313857/WGoROpHy_400x400.jpg',
+        }
+    ],
 
 };
+
 const auth = createSlice({
     name:'auth',
     initialState,

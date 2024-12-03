@@ -1,8 +1,10 @@
-import store from "~/store";
+import { useParams } from "react-router-dom";
 
 
 export default function Profile(){ 
+
+    const { slug } = useParams();
     return (
-        <div>Profile component - {store.getState().auth?.currentAccount?.username}</div>
+        <div>Profile component - {slug}</div>
     )
 }

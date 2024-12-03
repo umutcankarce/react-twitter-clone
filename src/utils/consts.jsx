@@ -1,5 +1,5 @@
 import store from "~/store";
-const states = { }
+
 export const mainMenu = [
     {
         path:'/',
@@ -128,7 +128,7 @@ export const mainMenu = [
 	},
 
     {
-		path: '/verified',
+		path: 'verified',
 		title: 'Premium',
 		icon: {
 			active: (
@@ -151,7 +151,9 @@ export const mainMenu = [
 	},
 
     {
-		path: `/${store.getState().auth?.currentAccount?.username}`,
+		path: () => {
+			return `/${store.getState().auth.currentAccount.username}`
+		},
 		title: 'Profile',
 		icon: {
 			active: (
