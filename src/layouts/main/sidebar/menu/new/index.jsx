@@ -1,5 +1,5 @@
 
-import Button from "~/components/buttons";
+import Button from "~/components/button";
 export default function NewTweet(){ 
     return (
         <div className="py-4 w-[90%]">

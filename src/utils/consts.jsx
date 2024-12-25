@@ -22,6 +22,7 @@ export const mainMenu = [
 
         }
     },
+	
     {
         path:'explore',
         title:'Keşfet',
@@ -42,6 +43,7 @@ export const mainMenu = [
             )
         }
     },
+
     {
         path:'/notifications',
         title:'Bildirimler',
@@ -58,6 +60,7 @@ export const mainMenu = [
             )
         }
     },
+
     {
 		path: '/messages',
 		title: 'Mesajlar',
@@ -175,4 +178,23 @@ export const mainMenu = [
 		}
 	},
 
+];
+
+
+export const topics = [
+	{
+		title:"Türkiye tarihinde gündemde",
+		topic:{
+			type:"tag",
+			value:"asgariucret"
+		},
+	},
+	{ 
+		title:"Türkiye tarihinde gündemde",
+		topic:{ 
+			type:"tag",
+			value:"kitaponerileri"
+		},
+		postCount:13500,
+	}
 ];
