@@ -190,11 +190,19 @@ export const topics = [
 		},
 	},
 	{ 
-		title:"Türkiye tarihinde gündemde",
+		title:"Teknolojik etkinlikler",
 		topic:{ 
 			type:"tag",
+			value:"innovacraftcom"
+		},
+		postCount:4500,
+	},
+	{ 
+		title:"Kültürel etkinlikler",
+		topic:{ 
+			type:"starlink",
 			value:"kitaponerileri"
 		},
-		postCount:13500,
+		postCount:1200,
 	}
 ];

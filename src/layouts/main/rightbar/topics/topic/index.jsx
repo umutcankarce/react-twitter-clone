@@ -1,23 +1,22 @@
 import { Link } from "react-router-dom";
 import { numberFormat } from "~/utils/format";
 
-export default function Topic({item}){ 
+export default function Topic({ item }){ 
     return (
-        <div>
-            <Link 
-                to="/"
-                className="py-3 px-4 transition-colors"
-            >
-                <div className="text-[0.813rem] text-[#71767b] leading-4">{item.title}</div>
-                <div className="text-[15px] font-bold leading-5 mt-0.5">
-                   {item.topic.type == "tag" && '#'}{item.topic.value}
+        <Link 
+            to="/"
+            className="py-3 px-4 transition-colors hover:bg-white/[0.03]"
+
+        >
+            <div className="text-[13px] text-[#71767b] leading-4">{item.title}</div>
+            <div className="text-[15px] font-bold leading-5 mt-0.5">
+                {item.topic.type === "tag" && "#"}{item.topic.value}
+            </div>
+            {item?.postCount && (
+                <div className="text-[13px] mt-1 text-[#71767b] leading-4">
+                    {numberFormat(item.postCount)} posts
                 </div>
-                {item?.postCount && (
-                    <div className="text-[13px] text-[#71767b] leading-4 mt-1">
-                        {numberFormat(item.postCount)} posts
-                    </div>
-                )}
-            </Link>
-        </div>
+            )}
+        </Link>
     )
 }
