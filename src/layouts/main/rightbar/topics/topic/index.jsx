@@ -5,8 +5,7 @@ export default function Topic({ item }){
     return (
         <Link 
             to="/"
-            className="py-3 px-4 transition-colors hover:bg-white/[0.03]"
-
+            className="py-3 px-4 transition-colors hover:bg-white/[0.03] relative"
         >
             <div className="text-[13px] text-[#71767b] leading-4">{item.title}</div>
             <div className="text-[15px] font-bold leading-5 mt-0.5">
